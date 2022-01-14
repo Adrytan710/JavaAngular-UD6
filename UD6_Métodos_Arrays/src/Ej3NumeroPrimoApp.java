@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Ej3NumeroPrimoApp {
 
-	//  @author Adrián Rodriguez
+	//  @author AdriÃ¡n Rodriguez
 	
 	public static void main(String[] args) {
 		
@@ -10,7 +10,7 @@ public class Ej3NumeroPrimoApp {
 	}
 	
 	public static void primo() {
-        int num = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número"));
+        int num = Integer.parseInt(JOptionPane.showInputDialog("Introduce un nÃºmero"));
         if (primoSi(num)) {
             System.out.println("El numero " + num + " es primo");
         } else {
@@ -22,9 +22,10 @@ public class Ej3NumeroPrimoApp {
     	  int cont = 2;
           boolean esPrimo = true;
           while ((esPrimo) && (cont != num)) {
-              if (num%cont == 0)
+              if (num%cont == 0) {
                   esPrimo = false;
-              cont++;
+              	  cont++;
+	      }
           }
           return esPrimo;
      }
